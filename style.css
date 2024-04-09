@@ -37,8 +37,8 @@ body {
 
 .theme-toggler {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 27px;
+  left: 105px;
   color: #fff;
   cursor: pointer;
   z-index: 1;
@@ -66,7 +66,7 @@ body {
 
 #display {
   margin: 0 10px;
-  height: 250px;
+  height: 240px;
   width: auto;
   max-width: 270px;
   display: flex;
@@ -139,7 +139,7 @@ button.btn-equal {
   left: 50%;
   transform: translateX(-50%);
   background-color: #a4a4a4;
-  padding: 10px 20px;
+  padding: 10px 47px;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -148,7 +148,10 @@ button.btn-equal {
   margin: 0;
   font-size: 12px;
   color: #333;
-  text-align: center;
+  text-align: left;
+}
+.calculator.dark .island p::before {
+  content: "Dark theme";
 }
 
 /*light theme*/
@@ -194,14 +197,17 @@ button.btn-equal {
   left: 50%;
   transform: translateX(-50%);
   background-color: #dbd9d9;
-  padding: 10px 20px;
+  padding: 10px 47px;
   border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .calculator .island p {
   margin: 0;
   font-size: 12px;
   color: #333;
-  text-align: center;
+  text-align: left;
+}
+.calculator .island p::before {
+  content: "Light theme";
 }
